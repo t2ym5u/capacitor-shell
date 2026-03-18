@@ -303,7 +303,7 @@ function checkMode(configFile) {
 
   let cfg;
   try {
-    cfg = JSON.parse(fs.readFileSync(configFile, "utf-8"));
+    cfg = loadConfig(configFile);
     log.success(`${configFile} loaded`);
   } catch (e) {
     log.error(`Invalid JSON in ${configFile}: ${e.message}`);

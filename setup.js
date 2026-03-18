@@ -323,11 +323,26 @@ function checkMode(configFile) {
     log.success(`plugins         : ${cfg.plugins && cfg.plugins.length ? cfg.plugins.join(", ") : "none"}`);
   }
 
+  // ── Detect uninitialized project (fresh clone) ───────────────────────────
+  const hasCapConfig = fs.existsSync("capacitor.config.ts");
+  const hasPlatformDir = (cfg.platforms || []).some((p) =>
+    fs.existsSync(path.join(process.cwd(), p)),
+  );
+
+  if (!hasCapConfig && !hasPlatformDir) {
+    log.step("Project state");
+    log.divider();
+    log.warn("Project not yet initialized — run node setup.js to set it up");
+    console.log();
+    console.log(`${c.yellow}${c.bold}⚠ Project not initialized — config is valid, run node setup.js${c.reset}\n`);
+    return 0;
+  }
+
   // ── capacitor.config.ts ───────────────────────────────────────────────────
   log.step("capacitor.config.ts");
   log.divider();
 
-  if (!fs.existsSync("capacitor.config.ts")) {
+  if (!hasCapConfig) {
     log.warn("capacitor.config.ts missing — run node setup.js to generate it");
     issues++;
   } else {

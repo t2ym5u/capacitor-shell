@@ -1,0 +1,4 @@
+{
+  "extends": "config.json",
+  "url": "https://my-site.com"
+}

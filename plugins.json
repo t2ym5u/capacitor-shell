@@ -1,0 +1,62 @@
+{
+  "geolocation": {
+    "pkg": "@capacitor/geolocation",
+    "label": "GPS & Geolocation"
+  },
+  "camera": {
+    "pkg": "@capacitor/camera",
+    "label": "Camera & Gallery"
+  },
+  "push-notifications": {
+    "pkg": "@capacitor/push-notifications",
+    "label": "Push Notifications"
+  },
+  "local-notifications": {
+    "pkg": "@capacitor/local-notifications",
+    "label": "Local Notifications"
+  },
+  "motion": {
+    "pkg": "@capacitor/motion",
+    "label": "Motion Sensors (gyro, accel)"
+  },
+  "biometric-auth": {
+    "pkg": "@aparajita/capacitor-biometric-auth",
+    "label": "Biometric Auth (Face ID, fingerprint)"
+  },
+  "network": {
+    "pkg": "@capacitor/network",
+    "label": "Network Status"
+  },
+  "filesystem": {
+    "pkg": "@capacitor/filesystem",
+    "label": "Filesystem"
+  },
+  "preferences": {
+    "pkg": "@capacitor/preferences",
+    "label": "Key/Value Storage"
+  },
+  "bluetooth-le": {
+    "pkg": "@capacitor-community/bluetooth-le",
+    "label": "Bluetooth LE"
+  },
+  "splash-screen": {
+    "pkg": "@capacitor/splash-screen",
+    "label": "Splash Screen"
+  },
+  "status-bar": {
+    "pkg": "@capacitor/status-bar",
+    "label": "Status Bar"
+  },
+  "keyboard": {
+    "pkg": "@capacitor/keyboard",
+    "label": "Keyboard Behaviour"
+  },
+  "browser": {
+    "pkg": "@capacitor/browser",
+    "label": "In-App Browser"
+  },
+  "keep-awake": {
+    "pkg": "@capacitor/keep-awake",
+    "label": "Keep Screen Awake"
+  }
+}

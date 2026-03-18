@@ -1,0 +1,9 @@
+# Dependencies
+node_modules/
+
+# Generated assets (downloaded by assets.js)
+assets/
+
+# Environment
+.env
+.env.*

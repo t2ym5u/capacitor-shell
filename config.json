@@ -1,0 +1,10 @@
+{
+  "appId": "com.mycompany.myapp",
+  "appName": "My Application",
+  "url": "https://my-site.com",
+  "icon": "https://my-site.com/icon.png",
+  "splash": "https://my-site.com/splash.png",
+  "backgroundColor": "#ffffff",
+  "platforms": ["android", "ios"],
+  "plugins": []
+}

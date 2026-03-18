@@ -1,0 +1,6 @@
+{
+  "extends": "config.json",
+  "appName": "My App (Dev)",
+  "url": "https://dev.my-site.com",
+  "platforms": ["android"]
+}

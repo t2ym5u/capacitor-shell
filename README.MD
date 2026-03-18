@@ -6,6 +6,33 @@ A lightweight mobile wrapper that packages your existing website into a native i
 
 ---
 
+## Using as a template
+
+This repository is a **GitHub Template** — create one repo per application.
+
+1. Click **"Use this template"** → **"Create a new repository"** on GitHub
+2. Clone your new repo and set up the template as upstream to receive future fixes:
+
+```bash
+git clone https://github.com/your-org/my-app-shell
+cd my-app-shell
+
+# Track the template to pull future fixes
+git remote add upstream https://github.com/your-org/capacitor-shell
+
+# Edit config.json with your app values, then run:
+node setup.js
+```
+
+To pull improvements from the template later:
+
+```bash
+git fetch upstream
+git merge upstream/main
+```
+
+---
+
 ## Requirements
 
 | Tool                       | Version       | Link                                 |

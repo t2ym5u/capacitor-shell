@@ -22,13 +22,14 @@
   },
   "packageManager": "pnpm@10.32.1",
   "dependencies": {
-    "@capacitor/android": "8.3.4",
-    "@capacitor/core": "8.3.4",
-    "@capacitor/ios": "8.3.4"
+    "@capacitor/android": "8.5.1",
+    "@capacitor/core": "8.5.1",
+    "@capacitor/ios": "8.5.1"
   },
   "devDependencies": {
     "@capacitor/assets": "^3.0.5",
-    "@capacitor/cli": "8.3.4",
-    "typescript": "6.0.3"
+    "@capacitor/cli": "8.5.1",
+    "@typescript/typescript6": "^6.0.2",
+    "typescript": "7.0.2"
   }
 }
